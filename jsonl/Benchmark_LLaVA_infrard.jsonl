@@ -1,0 +1,200 @@
+{"question_id": 101, "image": "00001D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 202, "image": "00005N_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 303, "image": "00013N_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero / no"}
+{"question_id": 404, "image": "00021N_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 505, "image": "00031.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 601, "image": "00044N_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 702, "image": "00046N_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 803, "image": "00055D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 904, "image": "00061.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three / four / five"}
+{"question_id": 1005, "image": "00061D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 1101, "image": "00069D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 1202, "image": "00079D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car"}
+{"question_id": 1303, "image": "00089D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 1404, "image": "00091.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 1505, "image": "00097D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 1601, "image": "00104D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 1702, "image": "00111D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car"}
+{"question_id": 1803, "image": "00119D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 1904, "image": "00127D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 2005, "image": "00139D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 2101, "image": "00147D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 2202, "image": "00151.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain / car"}
+{"question_id": 2303, "image": "00154D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three"}
+{"question_id": 2404, "image": "00162D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 2505, "image": "00170D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 2601, "image": "00176D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 2702, "image": "00181.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain / car"}
+{"question_id": 2803, "image": "00185D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 2904, "image": "00192D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 3005, "image": "00204D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 3101, "image": "00211D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 3202, "image": "00218D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 3303, "image": "00222D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "five / six"}
+{"question_id": 3404, "image": "00229D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 3505, "image": "00237D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 3601, "image": "00241.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 3702, "image": "00245D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 3803, "image": "00263D_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 3904, "image": "00271.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 4005, "image": "00279D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 4101, "image": "00303D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 4202, "image": "00319D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain / car"}
+{"question_id": 4303, "image": "00331.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 4404, "image": "00337D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 4505, "image": "00361.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 4601, "image": "00369D_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 4702, "image": "00387D_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 4803, "image": "00391.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "seven"}
+{"question_id": 4904, "image": "00414D_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 5005, "image": "00437D_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 5101, "image": "00451.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 5202, "image": "00481.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain / car"}
+{"question_id": 5303, "image": "00541.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "seven"}
+{"question_id": 5404, "image": "00571.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four / five"}
+{"question_id": 5505, "image": "00631.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 5601, "image": "00661.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 5702, "image": "00688N_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "light / lamp"}
+{"question_id": 5803, "image": "00691.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one / two"}
+{"question_id": 5904, "image": "00706N_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 6005, "image": "00725N_rgb.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 6101, "image": "00736N_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 6202, "image": "00750N_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 6303, "image": "00751.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 6404, "image": "00767N_rgb.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 6505, "image": "00781.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 6601, "image": "00794N_rgb.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 6702, "image": "00812N_rgb.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "light / lamp"}
+{"question_id": 6803, "image": "00829N_rgb.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one / four"}
+{"question_id": 6904, "image": "00841.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 7005, "image": "00871.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 7101, "image": "00931.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 7202, "image": "00961.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 7303, "image": "00991.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "eight"}
+{"question_id": 7404, "image": "01051.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 7505, "image": "01081.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 7601, "image": "01141.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 7702, "image": "01171.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 7803, "image": "01231.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 7904, "image": "01261.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 8005, "image": "01291.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 8101, "image": "01351.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 8202, "image": "01381.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "road / bank"}
+{"question_id": 8303, "image": "01441.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 8404, "image": "01471.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "fifteen / sixteen"}
+{"question_id": 8505, "image": "01531.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 8601, "image": "01561.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 8702, "image": "01591.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "motorcycle"}
+{"question_id": 8803, "image": "01651.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 8904, "image": "01681.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two / three"}
+{"question_id": 9005, "image": "01741.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 9101, "image": "01771.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 9202, "image": "01831.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 9303, "image": "01861.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 9404, "image": "01891.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 9505, "image": "01951.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 9601, "image": "01981.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 9702, "image": "02041.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car / building / architecture"}
+{"question_id": 9803, "image": "02071.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 9904, "image": "02131.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "eight"}
+{"question_id": 10005, "image": "02161.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 10101, "image": "02191.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 10202, "image": "02251.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car"}
+{"question_id": 10303, "image": "02281.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 10404, "image": "02341.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two / three"}
+{"question_id": 10505, "image": "02371.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 10601, "image": "02431.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 10702, "image": "02461.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car / building / architecture"}
+{"question_id": 10803, "image": "02491.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three / four"}
+{"question_id": 10904, "image": "02551.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three"}
+{"question_id": 11005, "image": "02581.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 11101, "image": "02641.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 11202, "image": "02651.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "light / lamp / car"}
+{"question_id": 11303, "image": "02701.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 11404, "image": "02731.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four / five"}
+{"question_id": 11505, "image": "02761.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 11601, "image": "02821.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 11702, "image": "02851.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain / building / architecture"}
+{"question_id": 11803, "image": "02911.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 11904, "image": "02941.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "ten / eleven / twelve"}
+{"question_id": 12005, "image": "03001.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 12101, "image": "03031.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 12202, "image": "03061.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "tree / car / grass / person / pedestrain"}
+{"question_id": 12303, "image": "03121.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 12404, "image": "03151.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 12505, "image": "03211.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 12601, "image": "03241.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 12702, "image": "03301.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "building / architecture"}
+{"question_id": 12803, "image": "03331.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 12904, "image": "03361.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "five / six"}
+{"question_id": 13005, "image": "03421.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 13101, "image": "03451.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 13202, "image": "03511.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "light / lamp"}
+{"question_id": 13303, "image": "03541.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 13404, "image": "03601.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "ten / eleven"}
+{"question_id": 13505, "image": "03631.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 13601, "image": "03661.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 13702, "image": "03721.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 13803, "image": "03751.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 13904, "image": "03811.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 14005, "image": "03841.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 14101, "image": "03901.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 14202, "image": "03931.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "tire / person / pedestrain"}
+{"question_id": 14303, "image": "03961.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 14404, "image": "04021.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 14505, "image": "04051.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 14601, "image": "04141.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "no"}
+{"question_id": 14702, "image": "04181.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 14803, "image": "190001.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero / two"}
+{"question_id": 14904, "image": "190101.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "five"}
+{"question_id": 15005, "image": "190202.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 15101, "image": "190302.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 15202, "image": "190402.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 15303, "image": "190502.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 15404, "image": "190603.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 15505, "image": "190703.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 15601, "image": "190804.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 15702, "image": "200104.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 15803, "image": "200204.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one / two"}
+{"question_id": 15904, "image": "200304.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 16005, "image": "210105.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 16101, "image": "210205.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 16202, "image": "210305.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "tire"}
+{"question_id": 16303, "image": "210405.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 16404, "image": "220109.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero"}
+{"question_id": 16505, "image": "220209.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 16601, "image": "220309.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 16702, "image": "230108.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 16803, "image": "230208.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three"}
+{"question_id": 16904, "image": "230308.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 17005, "image": "230408.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 17101, "image": "240101.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 17202, "image": "240201.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 17303, "image": "240301.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero / one"}
+{"question_id": 17404, "image": "240401.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four / five"}
+{"question_id": 17505, "image": "260001.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 17601, "image": "260101.jpg", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 17702, "image": "260201.jpg", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car"}
+{"question_id": 17803, "image": "260304.jpg", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "one"}
+{"question_id": 17904, "image": "260404.jpg", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 18005, "image": "260504.jpg", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 18101, "image": "set06_V001_I00519_visible.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 18202, "image": "set06_V002_I01059_visible.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 18303, "image": "set06_V003_I00639_visible.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "two"}
+{"question_id": 18404, "image": "set06_V003_I02319_visible.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero / one"}
+{"question_id": 18505, "image": "set07_V000_I01759_visible.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 18601, "image": "set07_V000_I02059_visible.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 18702, "image": "set07_V001_I03239_visible.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car"}
+{"question_id": 18803, "image": "set08_V000_I00799_visible.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three / four / five"}
+{"question_id": 18904, "image": "set08_V000_I00879_visible.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "zero / one"}
+{"question_id": 19005, "image": "set08_V000_I01219_visible.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 19101, "image": "set08_V000_I01659_visible.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 19202, "image": "set08_V001_I00699_visible.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "car / person / pedestrain"}
+{"question_id": 19303, "image": "set08_V002_I01119_visible.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "three / two"}
+{"question_id": 19404, "image": "set09_V000_I01139_visible.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four"}
+{"question_id": 19505, "image": "set11_V000_I00019_visible.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 19601, "image": "set11_V000_I01059_visible.png", "text": "Are there any pedestrians or animals near the road?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
+{"question_id": 19702, "image": "set11_V000_I01539_visible.png", "text": "What is the hottest content in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "person / pedestrain"}
+{"question_id": 19803, "image": "set11_V001_I00159_visible.png", "text": "How many pedestrians are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "four / five"}
+{"question_id": 19904, "image": "set11_V001_I01099_visible.png", "text": "How many cars are there in the image?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "six / seven / eight / nine / ten / eleven"}
+{"question_id": 20005, "image": "set11_V001_I01539_visible.png", "text": "Is there a pedestrian/car ahead?\nAnswer the question using a single word or phrase.", "category": "default", "answer": "yes"}
