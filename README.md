@@ -1,8 +1,7 @@
 # BenchGPT: Benchmarking Cross-style Visual Capability of Large Multimodal Models
 
-## Overview
-
-This archive involves processing and evaluating images and questions using a model that outputs results based on the given inputs. It utilizes Python code for reading, processing, and evaluating images and questions against ground truth answers.
+## Demo
+[BenchGPT/imgs/fig2.pdf](Demo)
 
 ## Directory Structure
 
