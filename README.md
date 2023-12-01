@@ -1,7 +1,8 @@
-# BenchGPT: Benchmarking Cross-style Visual Capability of Large Multimodal Models
+# XXXXX
 
-## Demo
-[BenchGPT/imgs/fig2.pdf](Demo)
+## Overview
+
+![BenchGPT/imgs/fig2.pdf](Demo)
 
 ## Directory Structure
 
@@ -33,4 +34,66 @@
 - **images/**: 
 
   - This directory contains all image files of different styles.
->>>>>>> origin/master
+
+## Evaluate on our Benchmark
+## Baseline
+|Model|VRAM required|
+|:---|:---:|
+|InstructBLIP-7B|30GB|
+|InstructBLIP-13B|65GB|
+|LLava-1.5-7B|<24GB|
+|LLava-1.5-13B|30GB|
+### InstructBLIP 
+
+- **Install**  
+```
+git clone https://github.com/salesforce/LAVIS.git  
+cd LAVIS  
+pip install -e .  
+```
+
+- **Prepare Vicuna Weights**  
+InstructBLIP uses frozen Vicuna 7B and 13B models. Please first follow the [instructions](https://github.com/lm-sys/FastChat) to prepare Vicuna v1.1 weights.   
+Then modify the ```llm_model``` in the [Model Config](https://github.com/salesforce/LAVIS/blob/main/lavis/configs/models/blip2/blip2_instruct_vicuna7b.yaml) to the folder that contains Vicuna weights.
+
+- **Run InstructBLIP on our Benchmark**
+
+- **Evaluate results**
+
+
+
+
+
+### LLaVA  
+- **Install**
+
+1. Clone this repository and navigate to LLaVA folder
+```bash
+git clone https://github.com/haotian-liu/LLaVA.git
+cd LLaVA
+```
+
+2. Install Package
+```Shell
+conda create -n llava python=3.10 -y
+conda activate llava
+pip install --upgrade pip  # enable PEP 660 support
+pip install -e .
+```
+
+3. Install additional packages for training cases
+```
+pip install -e ".[train]"
+pip install flash-attn --no-build-isolation
+```
+- LLaVA Weights  
+Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public LLaVA checkpoints, and the instructions of how to use the weights.
+
+
+
+## Related project
+- [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
+
+- [LLaVA](https://github.com/haotian-liu/LLaVA)
+
+
