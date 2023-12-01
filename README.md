@@ -3,7 +3,7 @@
 
 
 <p align="center">
-    <img src="BenchGPT/imgs/tittle_fig.png" width="150" style="margin-bottom: 0.2;"/>
+    <img src="imgs/tittle_fig.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
@@ -14,14 +14,12 @@
     
 [![hf_space](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/spaces/LanguageBind/Video-LLaVA)
 [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Video-LLaVA)
-[![Replicate demo and cloud API](https://replicate.com/nateraw/video-llava/badge)](https://replicate.com/nateraw/video-llava)
 [![arXiv](https://img.shields.io/badge/Arxiv-2311.10122-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.10122) <br>
-[![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/PKU-YuanGroup/Video-LLaVA/blob/main/LICENSE) 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FVideo-LLaVA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
+<!-- [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/PKU-YuanGroup/Video-LLaVA/blob/main/LICENSE)  -->
 [![GitHub issues](https://img.shields.io/github/issues/PKU-YuanGroup/Video-LLaVA?color=critical&label=Issues)](https://github.com/PKU-YuanGroup/Video-LLaVA/issues?q=is%3Aopen+is%3Aissue)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/PKU-YuanGroup/Video-LLaVA?color=success&label=Issues)](https://github.com/PKU-YuanGroup/Video-LLaVA/issues?q=is%3Aissue+is%3Aclosed)  <br>
-[![zhihu](https://img.shields.io/badge/-Twitter@Nate%20Raw%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/_nateraw/status/1726783481248977037)
-[![zhihu](https://img.shields.io/badge/-Twitter@Aran%20Komatsuzaki%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/arankomatsuzaki/status/1726421417963516144)
+<!-- [![zhihu](https://img.shields.io/badge/-Twitter@Nate%20Raw%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/_nateraw/status/1726783481248977037) -->
+<!-- [![zhihu](https://img.shields.io/badge/-Twitter@Aran%20Komatsuzaki%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/arankomatsuzaki/status/1726421417963516144) -->
 [![zhihu](https://img.shields.io/badge/-Twitter@jesselaunz%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/jesselaunz/status/1726850138776453379)
 [![zhihu](https://img.shields.io/badge/-WeChat@量子位-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/EFqLv_Euf5VU024zOtzkkg)
 [![zhihu](https://img.shields.io/badge/-WeChat@新智元-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/uwaxMu8UbJpcLTXsNJwpVQ)
@@ -34,7 +32,7 @@
 
 ## Demo
 
-![BenchGPT/imgs/demo.png](Demo)
+![Demo](imgs/demo.png)
 
 
 ## Directory Structure
