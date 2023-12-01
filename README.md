@@ -1,8 +1,9 @@
-# XXXXX
+# BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models
 
-## Overview
+## Demo
 
-![BenchGPT/imgs/fig2.pdf](Demo)
+![BenchGPT/imgs/demo.png](Demo)
+
 
 ## Directory Structure
 
@@ -31,11 +32,12 @@
 
     The image is the relative image location of corresponding style image folder, the text is the question, answer is ground truth answer.
 
-- **images/**: 
+- **imgs/**: 
 
-  - This directory contains all image files of different styles.
+  - This directory contains the image which used in this page. However, It's not out benchmark images.
 
 ## Evaluate on our Benchmark
+
 ## Baseline
 |Model|VRAM required|
 |:---|:---:|
@@ -90,6 +92,9 @@ pip install flash-attn --no-build-isolation
 Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public LLaVA checkpoints, and the instructions of how to use the weights.
 
 
+## Cite our work
+
+
 
 ## Related project
 - [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
@@ -97,3 +102,4 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 - [LLaVA](https://github.com/haotian-liu/LLaVA)
 
 
+## Acknowledgement
