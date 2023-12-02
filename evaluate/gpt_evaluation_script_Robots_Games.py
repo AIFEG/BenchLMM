@@ -11,7 +11,7 @@ MAX_RETRY=2000
 CONCURRENT_CONNECTIONS=4
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--meta_data", type=str, default='Benchmark/jsonl/Benchmark_LLaVA_game.jsonl')
+parser.add_argument("--meta_data", type=str, default='BenchGPT/jsonl/game_meta_data.json')
 parser.add_argument('--model_output', type=str, default='results/chatgpt_holmes_outputs/Open-World Game.json')
 parser.add_argument("--openai_key", type=str, default="sk-xxxx")
 parser.add_argument("--output_path", type=str, default="output.json")
