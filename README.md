@@ -80,7 +80,7 @@ Prepare your results in the following format, Key "prompt" is the input of the m
 }
 ```
 
-Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](BenchGPT/scripts/evaluate.sh)
+Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
 Bash BenchGPT/scripts/evaluate.sh
 ```
