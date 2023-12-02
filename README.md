@@ -43,7 +43,7 @@
 
 - **evaluate/**: 
 
-  - All the Python code used for evaluating the model's output. This evaluation is done by using GPT to compare the model output answers with ground truth answers.
+  - All the Python code used for evaluating the model's output. This evaluation is done by using ChatGPT to compare the model output answers with ground truth answers.
 
 - **jsonl/**:
 
@@ -67,6 +67,23 @@
   - This directory contains the image which used in this page. However, It's not out benchmark images.
 
 ## Evaluate on our Benchmark
+Download our benchmark image from our [Releases]()
+
+
+Prepare your results in the following format:
+```json
+{
+  "question_id": 110, 
+  "prompt": "Is there any defect in the object in this image? Answer the question using a single word or phrase.", 
+  "model_output": "Yes",
+
+}
+```
+
+Run the script [BenchGPT/scripts/evaluate.sh](BenchGPT/scripts/evaluate.sh)
+```
+Bash BenchGPT/scripts/evaluate.sh
+```
 
 ## Baseline
 |Model|VRAM required|
@@ -95,7 +112,7 @@ Then modify the ```llm_model``` in the [Model Config](https://github.com/salesfo
 
 
 
-
+----
 ### LLaVA  
 - **Install**
 
@@ -123,7 +140,8 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 
 
 ## Cite our work
-
+```
+```
 
 
 ## Related project
@@ -131,5 +149,6 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 
 - [LLaVA](https://github.com/haotian-liu/LLaVA)
 
-
+- [MM-VET](https://github.com/yuweihao/MM-Vet)
+- [PCA-EVAL](https://github.com/pkunlp-icler/PCA-EVAL)
 ## Acknowledgement
