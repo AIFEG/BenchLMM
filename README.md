@@ -30,8 +30,7 @@
 </h5>
 
 
-## Benchmark example
-
+## Benchmark Examples
 ![Demo](imgs/demo.png)
 
 
@@ -135,8 +134,23 @@ pip install -e .
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-- LLaVA Weights  
+4. LLaVA Weights  
 Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public LLaVA checkpoints, and the instructions of how to use the weights.
+
+
+- **Run LLaVA on our Benchmark**
+
+1. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
+```
+Bash BenchGPT/scripts/LLaVA.sh
+```
+2. Evaluate results
+```
+Bash BenchGPT/scripts/evaluate.sh
+```
+
+Note: Score will be saved in the file [results](evaluate_results/).
+
 
 
 ## Cite our work
@@ -152,3 +166,6 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 - [MM-VET](https://github.com/yuweihao/MM-Vet)
 - [PCA-EVAL](https://github.com/pkunlp-icler/PCA-EVAL)
 ## Acknowledgement
+
+
+## Appendix
