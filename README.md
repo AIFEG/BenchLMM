@@ -67,20 +67,20 @@
   - This directory contains the image which used in this page. However, It's not out benchmark images.
 
 ## Evaluate on our Benchmark
-Download our benchmark image from our [Releases]()
+Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchGPT/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchGPT)
 
 
-Prepare your results in the following format:
+Prepare your results in the following format, Key "prompt" is the input of the model, you better use the Jsonl file to store your results.
+
 ```json
 {
   "question_id": 110, 
   "prompt": "Is there any defect in the object in this image? Answer the question using a single word or phrase.", 
   "model_output": "Yes",
-
 }
 ```
 
-Run the script [BenchGPT/scripts/evaluate.sh](BenchGPT/scripts/evaluate.sh)
+Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](BenchGPT/scripts/evaluate.sh)
 ```
 Bash BenchGPT/scripts/evaluate.sh
 ```
