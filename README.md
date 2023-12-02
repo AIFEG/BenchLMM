@@ -12,7 +12,7 @@
 
 <h5 align="center">
     
-[![hf_space](https://img.shields.io/badge/🤗-Open%20In%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchGPT)
+[![hf_space](https://img.shields.io/badge/🤗-Dataset%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchGPT)
 <!-- [![Open in OpenXLab](https://cdn-static.openxlab.org.cn/app-center/openxlab_app.svg)](https://openxlab.org.cn/apps/detail/houshaowei/Video-LLaVA) -->
 [![arXiv](https://img.shields.io/badge/Arxiv-2311.10122-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.10122) <br>
 <!-- [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/PKU-YuanGroup/Video-LLaVA/blob/main/LICENSE)  -->
@@ -81,7 +81,7 @@ Prepare your results in the following format, Key "prompt" is the input of the m
 
 Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
-Bash BenchGPT/scripts/evaluate.sh
+bash BenchGPT/scripts/evaluate.sh
 ```
 
 ## Baseline
@@ -108,12 +108,12 @@ Then modify the ```llm_model``` in the [Model Config](https://github.com/salesfo
 
 Modify the file path and run the script [BenchGPT/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
 ```
-Bash BenchGPT/scripts/InstructBLIP.sh
+bash BenchGPT/scripts/InstructBLIP.sh
 ```
 - **Evaluate results**
 Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
-Bash BenchGPT/scripts/evaluate.sh
+ash BenchGPT/scripts/evaluate.sh
 ```
 
 
@@ -138,7 +138,7 @@ pip install -e .
 ```
 
 3. Install additional packages for training cases
-```
+```Shell
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
@@ -149,12 +149,12 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 - **Run LLaVA on our Benchmark**
 
 1. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
-```
-Bash BenchGPT/scripts/LLaVA.sh
+```Shell
+bash BenchGPT/scripts/LLaVA.sh
 ```
 2. Evaluate results
-```
-Bash BenchGPT/scripts/evaluate.sh
+```Shell
+bash BenchGPT/scripts/evaluate.sh
 ```
 
 Note: Score will be saved in the file [results](evaluate_results/).
