@@ -106,7 +106,15 @@ Then modify the ```llm_model``` in the [Model Config](https://github.com/salesfo
 
 - **Run InstructBLIP on our Benchmark**
 
+Modify the file path and run the script [BenchGPT/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
+```
+Bash BenchGPT/scripts/InstructBLIP.sh
+```
 - **Evaluate results**
+Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
+```
+Bash BenchGPT/scripts/evaluate.sh
+```
 
 
 
