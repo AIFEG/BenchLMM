@@ -172,14 +172,8 @@ Note: Score will be saved in the file [results](evaluate_results/).
 ```
 
 
-## Related project
-- [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
 
-- [LLaVA](https://github.com/haotian-liu/LLaVA)
 
-- [MM-VET](https://github.com/yuweihao/MM-Vet)
-- [PCA-EVAL](https://github.com/pkunlp-icler/PCA-EVAL)
-## Acknowledgement
 
 
 ## Appendix
@@ -187,3 +181,13 @@ Note: Score will be saved in the file [results](evaluate_results/).
 ![P1](imgs/P1-new_1.png)
 ![P2](imgs/P2-new_1.png)
 ![P3](imgs/P3-new_1.png)
+
+## Acknowledgement
+
+## Related project
+- [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
+
+- [LLaVA](https://github.com/haotian-liu/LLaVA)
+
+- [MM-VET](https://github.com/yuweihao/MM-Vet)
+- [PCA-EVAL](https://github.com/pkunlp-icler/PCA-EVAL)
