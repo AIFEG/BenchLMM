@@ -23,7 +23,7 @@ for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
             IMAGE_FOLDER="$IMAGE_FOLDER_base/infrard";;
         Benchmark_game)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/open_game";;
-        Benchmark_robots)
+        Benchmark_Robots)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/Robots";;
         Benchmark_RS)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/RS";;

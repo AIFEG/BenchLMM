@@ -53,10 +53,13 @@ def parse_scores(generated_text):
 def eval_entry(entry):
     meta_data = entry['meta_data']
     model_output = entry['model_output']
-
-    action_list = re.findall(r'\(.\) [^\.]+', meta_data["text"])
+    domain = meta_data['domain']
+    question = meta_data["question"]
+    action_list = [f"({chr(ord('A') + i)}) {choice}" for i, choice in enumerate(meta_data["actions"])]
     actions =  " ".join(action_list)
-    true_action = meta_data["answer"]
+    true_action = action_list[meta_data['answer_index']]
+    reason = meta_data["reason"]
+    key_concept = meta_data["key_concept"]
     prompt = template.format(actions=actions, 
                              model_output=model_output, 
                              true_action=true_action, 
@@ -102,26 +105,23 @@ def eval_entry(entry):
     
 
 if __name__ == '__main__':
-    model_outputs = json.load(open(args.model_output, 'r'))
-    meta_data_file = open(args.meta_data, 'r')
+    with open(args.model_output, 'r') as file:
+        model_outputs = [json.loads(line) for line in file]
+    with open(args.meta_data, 'r') as file:
+        meta_data = json.load(file)
+
     data = []
-    
-    for meta_data, model_output in zip(meta_data_file, model_outputs):
-        meta_data = json.loads(meta_data)
-        assert meta_data['question_id'] == model_output['index']
-
-        action_list = re.findall(r'\(.\) [^\.]+', meta_data["text"])
-        actions =  " ".join(action_list)
-        true_action = meta_data["answer"]
-
-        data.append({
-            "question_id": model_output['index'],
-            "meta_data": meta_data,
-            "action_candidates": actions,
-            "true_action": true_action,
-            "model_output": model_output['model_output']
-        })
-    
+    for meta in meta_data:
+        model_output = next((m for m in model_outputs if m['question_id'] == meta['index']), None)
+        if model_output:
+            data.append({
+                "question_id": meta['index'],
+                "meta_data": meta,
+                "action_candidates": " ".join(meta['actions']),
+                "true_action": meta['actions'][meta['answer_index']],
+                "model_output": model_output['model_output']
+            })
+            
     with concurrent.futures.ThreadPoolExecutor(max_workers=CONCURRENT_CONNECTIONS) as executor:
         future2entry = {executor.submit(eval_entry, entry): entry for entry in data}
         print(f"Total {len(data)} entries")

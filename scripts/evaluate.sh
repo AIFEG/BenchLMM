@@ -1,10 +1,10 @@
 #!/bin/bash
 
-WORKSPACE_PATH="/hdd_16T/Zirui/Song_Benchmark" # Please put your absolute workspace path here. It will be used as root folder for all the following folders.
+WORKSPACE_PATH="/hdd_16T/Zirui/Test2/BenchGPT" # Please put your absolute workspace path here. It will be used as root folder for all the following folders.
 GROUND_TRUTH_FOLDER="$WORKSPACE_PATH/jsonl" # The input folder of the ground truth answers.
-MODEL_PREDICT_FOLDER="$WORKSPACE_PATH/LLaVA" # The input folder of your model predict answers.
-RESULT_OUTPUT_FOLDER="$WORKSPACE_PATH/result" # The output folder of the gpt evaluate results. Python script will generate results here.
-OPENAI_API_KEY="sk-" # Please put your openai key here
+MODEL_PREDICT_FOLDER="$WORKSPACE_PATH/results" # The input folder of your model predict answers.
+RESULT_OUTPUT_FOLDER="$WORKSPACE_PATH/evaluate_results" # The output folder of the gpt evaluate results. Python script will generate results here.
+OPENAI_API_KEY="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" # Please put your openai key here
 
 function evaluate() {
     local prediction_file="$1"
@@ -22,6 +22,23 @@ function evaluate() {
     python "$WORKSPACE_PATH/evaluate/avg_score.py" "$RESULT_OUTPUT_FOLDER/$output_file"
 }
 
+# Function to evaluate robots and game files
+function evaluate_robots_and_games() {
+    local prediction_file="$1"
+    local meta_data_file="$2"
+    local script="$3"
+    local output_file="$4"
+    local temperature=$5
+
+    export OPENAI_API_KEY="$OPENAI_API_KEY"
+    python "$WORKSPACE_PATH/evaluate/$script" \
+        --model_output "$MODEL_PREDICT_FOLDER/$prediction_file" \
+        --meta_data "$GROUND_TRUTH_FOLDER/$meta_data_file" \
+        --openai_key "$OPENAI_API_KEY" \
+        --output_path "$RESULT_OUTPUT_FOLDER/$output_file" \
+        --temperture "$temperature"
+}
+
 # Function to determine the corresponding ground truth file
 function get_ground_truth_file() {
     local prediction_file="$1"
@@ -35,7 +52,7 @@ function get_ground_truth_file() {
         *xray*) echo "Benchmark_xray.jsonl" ;;
         *defect_detection*) echo "Benchmark_defect_detection.jsonl" ;;
         *game*) echo "Benchmark_game.jsonl" ;;
-        *robots*) echo "Benchmark_Robots.jsonl" ;;
+        *Robots*) echo "Benchmark_Robots.jsonl" ;;
         *infrard*) echo "Benchmark_infrard.jsonl" ;;
         *style_cartoon*) echo "Benchmark_style_cartoon.jsonl" ;;
         *style_handmake*) echo "Benchmark_style_handmake.jsonl" ;;
@@ -71,12 +88,8 @@ function get_evaluation_script() {
         echo "gpt_evaluation_script_style.py"
     elif [[ "$file_name" == *"tattoo".jsonl ]]; then
         echo "gpt_evaluation_script_style.py"
-    elif [[ "$file_name" == *"game".jsonl ]]; then
+    elif [[ "$file_name" == *"game".jsonl ]] || [[ "$file_name" == *"Robots".jsonl ]]; then
         echo "gpt_evaluation_script_Robots_Games.py"
-    elif [[ "$file_name" == *"robots".jsonl ]]; then
-        echo "gpt_evaluation_script_Robots_Games.py"
-    # elif [[ "$file_name" == *"weather".jsonl ]]; then
-    #     echo "gpt_evaluation_script_style.py"
     else
         echo "gpt_evaluation_script.py"
     fi
@@ -89,21 +102,27 @@ echo "========================================"
 
 for file in "$MODEL_PREDICT_FOLDER"/*.jsonl; do
     base_name=$(basename "$file")
-    ground_truth_file=$(get_ground_truth_file "$base_name")
-    
-    if [ "$ground_truth_file" != "unknown" ]; then
-        script_name=$(get_evaluation_script "$base_name")
-        output_file="${base_name%.jsonl}_evaluate.json"
 
-        echo "----------------------------------------"
-        echo "Processing file: $base_name"
-        echo "----------------------------------------"
-        evaluate "$base_name" "$script_name" "$ground_truth_file" "$output_file"
-        echo "----------------------------------------"
-        echo "Finished processing $base_name"
-        echo "----------------------------------------"
+    if [[ "$base_name" == *"Robots.jsonl" ]] || [[ "$base_name" == *"game.jsonl" ]]; then
+        script_name="gpt_evaluation_script_Robots_Games.py"
+
+        dir_path=${dir_path/\/.\//}
+        type_part=${base_name##*answers_Benchmark_}
+        type_part=${type_part%.jsonl}
+
+        # meta_data_file="${base_name%.jsonl}_meta_data.json"
+        meta_data_file="$dir_path${type_part}_meta_data.json"
+        output_file="${base_name%.jsonl}_evaluate.json"
+        evaluate_robots_and_games "$base_name" "$meta_data_file" "$script_name" "$output_file" 0
     else
-        echo "No matching ground truth file for $file"
+        ground_truth_file=$(get_ground_truth_file "$base_name")
+        if [ "$ground_truth_file" != "unknown" ]; then
+            script_name=$(get_evaluation_script "$base_name")
+            output_file="${base_name%.jsonl}_evaluate.json"
+            evaluate "$base_name" "$script_name" "$ground_truth_file" "$output_file"
+        else
+            echo "No matching ground truth file for $file"
+        fi
     fi
 done
 
