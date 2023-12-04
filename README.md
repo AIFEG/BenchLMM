@@ -184,11 +184,6 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 ## Appendix
 ### More benchmark examples
-![style](imgs/artistic_style_samples_cropped_1.png)
-
-![sensor](imgs/sensor_samples_1.png)
-
-![Applicaiton](imgs/app1_1.png)
-
-![Applicaiton](imgs/app2_1.png)
-
+![P1](imgs/P1-new_1.png)
+![P2](imgs/P2-new_1.png)
+![P3](imgs/P3-new_1.png)
