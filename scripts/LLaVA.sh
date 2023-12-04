@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define the paths for the answers folder, jsonl files, and base image folder
-ANSWERS_FOLDER="/path/to/answers" # LLaVA output folder
-JSONL_FILE_PATH="/path/to/jsonl" # Benchmark Jsonl folder
-IMAGE_FOLDER_base="/path/to/image" # Benchmark image folder 
+ANSWERS_FOLDER="/workspace/Test/BenchGPT/results" # The LLaVA output  
+JSONL_FILE_PATH="/workspace/Test/BenchGPT/jsonl"
+IMAGE_FOLDER_base="/workspace/Benckmark/images"
 
 # Iterate over all .jsonl files in the jsonl folder
 for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
@@ -15,7 +15,7 @@ for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
     case $FILENAME in
         Benchmark_AD)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/AD";;
-        Benchmark_CT|Benchmark_Med-X-Ray|Benchmark_MRI)
+        Benchmark_CT|Benchmark_Med-X-RAY|Benchmark_MRI)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/Med";;
         Benchmark_defect_detection)
             IMAGE_FOLDER="$IMAGE_FOLDER_base/defect_detection";;
@@ -41,7 +41,7 @@ for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
     ANSWER_FILE="$ANSWERS_FOLDER/answers_${FILENAME}.jsonl"
 
     # Execute the model_vqa.py script
-    python model_vqa.py \
+    python /workspace/Test/LLaVA/llava/eval/model_vqa.py \
         --model-path liuhaotian/llava-v1.5-13b \
         --question-file "$JSONL_FILE" \
         --image-folder "$IMAGE_FOLDER" \

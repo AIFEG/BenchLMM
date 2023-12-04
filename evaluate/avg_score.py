@@ -34,7 +34,7 @@ def main():
     avg_score = calculate_average_score(args.score_jsonl_path)
     
     if avg_score is not None:
-        output_path = 'BenchGPT/evaluate_results/average_score.json'
+        output_path = './evaluate_results/average_score.json'
         
         new_data = {
             'source_file': args.score_jsonl_path,
