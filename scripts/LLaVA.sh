@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define the paths for the answers folder, jsonl files, and base image folder
-ANSWERS_FOLDER="/path/to/answers"
-JSONL_FILE_PATH="/path/to/jsonl"
-IMAGE_FOLDER_base="/path/to/image"
+ANSWERS_FOLDER="/path/to/answers" # LLaVA output folder
+JSONL_FILE_PATH="/path/to/jsonl" # Benchmark Jsonl folder
+IMAGE_FOLDER_base="/path/to/image" # Benchmark image folder 
 
 # Iterate over all .jsonl files in the jsonl folder
 for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do

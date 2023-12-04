@@ -77,7 +77,7 @@
 {"question_id": 77, "text": "How many woman are there\nAnswer the question using a single word or phrase.", "image": "person/tattoo/000000000005.jpeg", "category":"default","answer": "0"}
 {"question_id": 78, "text": "How many man are there\nAnswer the question using a single word or phrase.", "image": "person/tattoo/000000000017.jpeg", "category":"default","answer": "2"}
 {"question_id": 79, "text": "What color is the girl's hair?\nAnswer the question using a single word or phrase.", "image": "person/tattoo/000000000003.jpeg", "category":"default","answer": "Black"}
-{"question_id": 80, "text": "What term is used to describe pedestrian crosswalks that reminiscent of the what is seen in the image? \nAnswer the question using a single word or phrase.", "image": "zebra/tattoo/000000000419.jpeg", "category":"default","answer": "zebra crossing / marked crosswalk"}
+{"question_id": 80, "text": "What is in the image? \nAnswer the question using a single word or phrase.", "image": "zebra/tattoo/000000000419.jpeg", "category":"default","answer": "A colorful  zebra"}
 {"question_id": 81, "text": "what is the item being held which is usually transparent.\nAnswer the question using a single word or phrase.", "image": "wine_glass/tattoo/000000000035.jpeg", "category":"default","answer": "wine glass"}
 {"question_id": 82, "text": "What is the item that holding flowers in the picture\nAnswer the question using a single word or phrase.", "image": "vase/tattoo/000000000130.jpeg", "category":"default","answer": "vase"}
 {"question_id": 83, "text": "What item is above their head?\nAnswer the question using a single word or phrase.", "image": "umbrella/tattoo/000000000084.jpeg", "category":"default","answer": "umbrella"}

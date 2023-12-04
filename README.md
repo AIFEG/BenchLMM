@@ -33,7 +33,7 @@
 ## Benchmark Examples
 ![Demo](imgs/demo.png)
 
-
+Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix]() for more examples and detailed questions.. 
 ## Directory Structure
 
 - **baseline/**: 
@@ -122,14 +122,17 @@ ash BenchGPT/scripts/evaluate.sh
 ----
 ### LLaVA  
 - **Install**
-
-1. Clone this repository and navigate to LLaVA folder
+1. cd to the baseline folder
+```bash
+cd baseline
+```
+2. Clone this repository and navigate to LLaVA folder
 ```bash
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
 ```
 
-2. Install Package
+3. Install Package
 ```Shell
 conda create -n llava python=3.10 -y
 conda activate llava
@@ -137,22 +140,25 @@ pip install --upgrade pip  # enable PEP 660 support
 pip install -e .
 ```
 
-3. Install additional packages for training cases
+4. Install additional packages for training cases
 ```Shell
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-4. LLaVA Weights  
+5. LLaVA Weights  
 Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public LLaVA checkpoints, and the instructions of how to use the weights.
 
 
-- **Run LLaVA on our Benchmark**
-
-1. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
+- **Run and evaluate LLaVA on our Benchmark**
+1. Modify "LLaVA/llava/eval/model_vqa.py" line 90 key "text" to "model_output" 
+```python
+                                   "model_output": outputs,
+```
+2. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
 ```Shell
 bash BenchGPT/scripts/LLaVA.sh
 ```
-2. Evaluate results
+3. Evaluate results
 ```Shell
 bash BenchGPT/scripts/evaluate.sh
 ```
@@ -177,3 +183,12 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 
 ## Appendix
+### More benchmark examples
+![style](imgs/style.png)
+
+![sensor](imgs/sensor.png)
+
+![Applicaiton](imgs/app1.png)
+
+![Applicaiton](imgs/app2.png)
+
