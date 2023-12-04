@@ -122,17 +122,14 @@ ash BenchGPT/scripts/evaluate.sh
 ----
 ### LLaVA  
 - **Install**
-1. cd to the baseline folder
-```bash
-cd baseline
-```
-2. Clone this repository and navigate to LLaVA folder
+
+1. Clone this repository and navigate to LLaVA folder
 ```bash
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
 ```
 
-3. Install Package
+2. Install Package
 ```Shell
 conda create -n llava python=3.10 -y
 conda activate llava
@@ -140,20 +137,18 @@ pip install --upgrade pip  # enable PEP 660 support
 pip install -e .
 ```
 
-4. Install additional packages for training cases
+3. Install additional packages for training cases
 ```Shell
 pip install -e ".[train]"
 pip install flash-attn --no-build-isolation
 ```
-5. LLaVA Weights  
+4. LLaVA Weights  
 Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md) for all public LLaVA checkpoints, and the instructions of how to use the weights.
 
 
 - **Run and evaluate LLaVA on our Benchmark**
-1. Modify ```LLaVA/llava/eval/model_vqa.py``` line 90 key "text" to "model_output" 
-```python
-                                   "model_output": outputs,
-```
+1.  Add the file [BenchGPT_LLaVA_model_vqa.py](baseline/LLaVA/BenchGPT_LLaVA_model_vqa.py) to the path ```LLaVA/llava/eval/``` 
+
 2. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
 ```Shell
 bash BenchGPT/scripts/LLaVA.sh
