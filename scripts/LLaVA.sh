@@ -1,5 +1,5 @@
 python model_vqa.py \
-    --model-path ./checkpoints/LLaVA-13B-v0 \
+    --model-path liuhaotian/llava-v1.5-13b \
     --question-file \
     playground/data/coco2014_val_qa_eval/qa90_questions.jsonl \
     --image-folder \
