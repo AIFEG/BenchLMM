@@ -33,16 +33,20 @@
 ## Benchmark Examples
 ![Demo](imgs/demo.png)
 
-Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix](https://github.com/AIFEG/BenchGPT/tree/main#appendix) for more examples and detailed questions.. 
+Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix](https://github.com/AIFEG/BenchGPT/tree/main#appendix) for more examples and detailed questions..
 ## Directory Structure
 
 - **baseline/**: 
 
-  - Contains sample Python code demonstrating how the model reads in, processes images and questions, and outputs the results.
+  - Contains LLaVA and InstructBLIP baseline code.
 
 - **evaluate/**: 
 
   - All the Python code used for evaluating the model's output. This evaluation is done by using ChatGPT to compare the model output answers with ground truth answers.
+
+- **evaluate_results/**:
+  
+    - This directory contains the evaluation results of the baseline models.
 
 - **jsonl/**:
 
@@ -64,6 +68,16 @@ Note: for a simple presentation, the questions in Domestic Robot and Open Game h
 - **imgs/**: 
 
   - This directory contains the image which used in this page. However, It's not out benchmark images.
+
+
+- **results/**: 
+
+  - This directory contains the inference results of the baseline models.
+
+- **scripts/**: 
+
+  - Contains the scripts to run the baseline and evaluate the results.
+
 
 ## Evaluate on our Benchmark
 Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchGPT/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchGPT)
