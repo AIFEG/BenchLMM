@@ -33,7 +33,7 @@
 ## Benchmark Examples
 ![Demo](imgs/demo.png)
 
-Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix]() for more examples and detailed questions.. 
+Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix](https://github.com/AIFEG/BenchGPT/tree/main#appendix) for more examples and detailed questions.. 
 ## Directory Structure
 
 - **baseline/**: 
