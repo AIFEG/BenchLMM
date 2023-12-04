@@ -150,7 +150,7 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 
 
 - **Run and evaluate LLaVA on our Benchmark**
-1. Modify "LLaVA/llava/eval/model_vqa.py" line 90 key "text" to "model_output" 
+1. Modify ```LLaVA/llava/eval/model_vqa.py``` line 90 key "text" to "model_output" 
 ```python
                                    "model_output": outputs,
 ```
