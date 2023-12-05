@@ -33,7 +33,7 @@
 ## Benchmark Examples
 ![Demo](imgs/demo.png)
 
-Note: for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our Benchmark [appendix](https://github.com/AIFEG/BenchGPT/tree/main#appendix) for more examples and detailed questions..
+Note: For a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our [Benchmark]([https://github.com/AIFEG/BenchGPT/tree/main#appendix](https://huggingface.co/datasets/AIFEG/BenchGPT) for more examples and detailed questions.
 ## Directory Structure
 
 - **baseline/**: 
@@ -182,14 +182,6 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 
 
-
-
-
-## Appendix
-### More benchmark examples
-![P1](imgs/P1-new_1.png)
-![P2](imgs/P2-new_1.png)
-![P3](imgs/P3-new_1.png)
 
 ## Acknowledgement
 
