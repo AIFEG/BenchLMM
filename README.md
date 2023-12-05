@@ -68,9 +68,18 @@ Note: For a simple presentation, the questions in Domestic Robot and Open Game h
 
 
 ## Evaluate on our Benchmark
+
+- **Install**  
 Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchGPT/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchGPT)
 
 
+```Shell
+git clone git@github.com:AIFEG/BenchGPT.git
+cd BenchGPT
+mkdir evaluate_results
+```
+
+- **Prepare your model output**  
 Prepare your results in the following format, Key "prompt" is the input of the model, you better use the Jsonl file to store your results.
 
 ```json
@@ -80,7 +89,28 @@ Prepare your results in the following format, Key "prompt" is the input of the m
   "model_output": "Yes",
 }
 ```
+- **Rename your Jsonl file**
+Rename your Jsonl file to ```xxxx_StyleName.jsonl``` like the following project tree. You must keep the style of the suffix consistent with the example.
+```
+.
+├── xxxxxxxx_AD.jsonl
+├── xxxxxxxx_CT.jsonl
+├── xxxxxxxx_MRI.jsonl
+├── xxxxxxxx_Med-X-RAY.jsonl
+├── xxxxxxxx_RS.jsonl
+├── xxxxxxxx_Robots.jsonl
+├── xxxxxxxx_defect_detection.jsonl
+├── xxxxxxxx_game.jsonl
+├── xxxxxxxx_infrard.jsonl
+├── xxxxxxxx_style_cartoon.jsonl
+├── xxxxxxxx_style_handmake.jsonl
+├── xxxxxxxx_style_painting.jsonl
+├── xxxxxxxx_style_sketch.jsonl
+├── xxxxxxxx_style_tattoo.jsonl
+├── xxxxxxxx_xray.jsonl
+```
 
+- **Evaluate your model output**  
 Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
 bash BenchGPT/scripts/evaluate.sh
@@ -115,7 +145,7 @@ bash BenchGPT/scripts/InstructBLIP.sh
 - **Evaluate results**
 Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
-ash BenchGPT/scripts/evaluate.sh
+bash BenchGPT/scripts/evaluate.sh
 ```
 
 

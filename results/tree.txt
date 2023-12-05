@@ -1,0 +1,19 @@
+.
+├── answers_Benchmark_AD.jsonl
+├── answers_Benchmark_CT.jsonl
+├── answers_Benchmark_MRI.jsonl
+├── answers_Benchmark_Med-X-RAY.jsonl
+├── answers_Benchmark_RS.jsonl
+├── answers_Benchmark_Robots.jsonl
+├── answers_Benchmark_defect_detection.jsonl
+├── answers_Benchmark_game.jsonl
+├── answers_Benchmark_infrard.jsonl
+├── answers_Benchmark_style_cartoon.jsonl
+├── answers_Benchmark_style_handmake.jsonl
+├── answers_Benchmark_style_painting.jsonl
+├── answers_Benchmark_style_sketch.jsonl
+├── answers_Benchmark_style_tattoo.jsonl
+├── answers_Benchmark_xray.jsonl
+└── tree.txt
+
+0 directories, 16 files
