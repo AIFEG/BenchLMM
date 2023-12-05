@@ -203,7 +203,7 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 
 ## Acknowledgement
-This research is supported in part by the Rapid-Rich Object Search (ROSE) Lab of Nanyang Technological University and the NTU-PKU Joint Research Institute (a collaboration between NTU and Peking University that is sponsored by a donation from the Ng Teng Fong Charitable Foundation). We are deeply grateful to Yaohang Li from the University of Technology Sydney for his invaluable assistance in conducting the experiments, and to Jingpu Yang, Helin Wang, Zihui Cui, Yushan Jiang, Fengxian Ji, and Yuxiao Hang from Northeastern University for their meticulous efforts in annotating the dataset.
+This research is supported in part by the Rapid-Rich Object Search (ROSE) Lab of Nanyang Technological University and the NTU-PKU Joint Research Institute (a collaboration between NTU and Peking University that is sponsored by a donation from the Ng Teng Fong Charitable Foundation). We are deeply grateful to Yaohang Li from the University of Technology Sydney for his invaluable assistance in conducting the experiments, and to Jingpu Yang, Helin Wang, Zihui Cui, Yushan Jiang, Fengxian Ji, and Yuxiao Hang from NLULab@NEUQ (Northeastern University at Qinhuangdao, China) for their meticulous efforts in annotating the dataset. We also would like to thank Prof. Miao Fang (NEUQ) for his supervision and insightful suggestion during discussion on this project.
 ## Related project
 - [InstructBLIP](https://github.com/salesforce/LAVIS/blob/main/projects/instructblip)
 
