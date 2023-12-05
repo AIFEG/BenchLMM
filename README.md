@@ -89,11 +89,11 @@ Prepare your results in the following format, Key "prompt" is the input of the m
   "model_output": "Yes",
 }
 ```
-- **Rename your Jsonl file**
+- **Rename your Jsonl file**  
 Rename your Jsonl file to ```xxxx_StyleName.jsonl``` like the following project tree. You must keep the style of the suffix consistent with the example.
 ```
 .
-├── xxxxxxxx_AD.jsonl
+├── answers_Benchmark_AD.jsonl
 ├── xxxxxxxx_CT.jsonl
 ├── xxxxxxxx_MRI.jsonl
 ├── xxxxxxxx_Med-X-RAY.jsonl
@@ -111,11 +111,11 @@ Rename your Jsonl file to ```xxxx_StyleName.jsonl``` like the following project 
 ```
 
 - **Evaluate your model output**  
-Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
+Modify the file path and run the script [scripts/evaluate.sh](scripts/evaluate.sh)
 ```
-bash BenchGPT/scripts/evaluate.sh
+bash scripts/evaluate.sh
 ```
-
+Note: Score will be saved in the file [results](evaluate_results/).
 ## Baseline
 |Model|VRAM required|
 |:---|:---:|
@@ -123,35 +123,6 @@ bash BenchGPT/scripts/evaluate.sh
 |InstructBLIP-13B|65GB|
 |LLava-1.5-7B|<24GB|
 |LLava-1.5-13B|30GB|
-### InstructBLIP 
-
-- **Install**  
-```
-git clone https://github.com/salesforce/LAVIS.git  
-cd LAVIS  
-pip install -e .  
-```
-
-- **Prepare Vicuna Weights**  
-InstructBLIP uses frozen Vicuna 7B and 13B models. Please first follow the [instructions](https://github.com/lm-sys/FastChat) to prepare Vicuna v1.1 weights.   
-Then modify the ```llm_model``` in the [Model Config](https://github.com/salesforce/LAVIS/blob/main/lavis/configs/models/blip2/blip2_instruct_vicuna7b.yaml) to the folder that contains Vicuna weights.
-
-- **Run InstructBLIP on our Benchmark**
-
-Modify the file path and run the script [BenchGPT/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
-```
-bash BenchGPT/scripts/InstructBLIP.sh
-```
-- **Evaluate results**
-Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
-```
-bash BenchGPT/scripts/evaluate.sh
-```
-
-
-
-
-----
 ### LLaVA  
 - **Install**
 
@@ -181,17 +152,47 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 - **Run and evaluate LLaVA on our Benchmark**
 1.  Add the file [BenchGPT_LLaVA_model_vqa.py](baseline/LLaVA/BenchGPT_LLaVA_model_vqa.py) to the path ```LLaVA/llava/eval/``` 
 
-2. Modify the file path and run the script [BenchGPT/scripts/LLaVA.sh](scripts/LLaVA.sh)
+2. Modify the file path and run the script [scripts/LLaVA.sh](scripts/LLaVA.sh)
 ```Shell
-bash BenchGPT/scripts/LLaVA.sh
+bash scripts/LLaVA.sh
 ```
 3. Evaluate results
 ```Shell
+bash scripts/evaluate.sh
+```
+
+Note: Score will be saved in the file [results](evaluate_results/).
+
+
+### InstructBLIP 
+
+- **Install**  
+```
+git clone https://github.com/salesforce/LAVIS.git  
+cd LAVIS  
+pip install -e .  
+```
+
+- **Prepare Vicuna Weights**  
+InstructBLIP uses frozen Vicuna 7B and 13B models. Please first follow the [instructions](https://github.com/lm-sys/FastChat) to prepare Vicuna v1.1 weights.   
+Then modify the ```llm_model``` in the [Model Config](https://github.com/salesforce/LAVIS/blob/main/lavis/configs/models/blip2/blip2_instruct_vicuna7b.yaml) to the folder that contains Vicuna weights.
+
+- **Run InstructBLIP on our Benchmark**
+
+Modify the file path and run the script [BenchGPT/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
+```
+bash BenchGPT/scripts/InstructBLIP.sh
+```
+- **Evaluate results**
+Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
+```
 bash BenchGPT/scripts/evaluate.sh
 ```
 
 Note: Score will be saved in the file [results](evaluate_results/).
 
+
+----
 
 
 ## Cite our work
