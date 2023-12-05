@@ -7,16 +7,23 @@
 <p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
 <h4 align="center">
-  <a href="https://github.com/RizhaoCai">Rizhao Cai*</a>, 
-  <a href="https://github.com/ZiruiSongBest">Zirui Song*</a>, 
-  <a href="https://dayan-guan.github.io/">Dayan Guan†</a>, 
-  <a href="https://zhenhaochenofficial.github.io/">Zhenhao Chen</a>, 
-  <a>Xing Luo</a>, 
-  <a>Chenyu Yi</a>, 
-  <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a>
+  <a href="https://github.com/RizhaoCai">Rizhao Cai*</a><sup>1</sup>, 
+  <a href="https://github.com/ZiruiSongBest">Zirui Song*</a><sup>2,3</sup>, 
+  <a href="https://dayan-guan.github.io/">Dayan Guan†</a><sup>1</sup>, 
+  <a href="https://zhenhaochenofficial.github.io/">Zhenhao Chen</a><sup>4</sup>, 
+  <a>Xing Luo</a><sup>5</sup>, 
+  <a>Chenyu Yi</a><sup>1</sup>, 
+  <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a><sup>1</sup>
 </h4>
+<ul align="center">
+  <sup>1</sup> Nanyang Technological University</li>
+  <sup>2</sup> University of Technology Sydney</li>
+  <sup>3</sup> Northeastern University</li>
+  <sup>4</sup> Mohamed bin Zayed University of Artificial Intelligence</li>
+  <sup>5</sup> Zhejiang University</li>
+</ul>
 
-<h5 align="center"> *Equal contribution, †Correspoding Author <h5 align="center">
+<h5 align="center"> *Equal contribution, †Corresponding Author </h5>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
 <h5 align="center">
