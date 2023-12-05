@@ -5,7 +5,7 @@
 <p align="center">
     <img src="imgs/tittle_fig.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
-<h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchGPT: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
 
@@ -197,6 +197,7 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 ## Cite our work
 ```
+The Arxiv version will be released soon!
 ```
 
 
