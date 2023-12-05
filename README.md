@@ -6,9 +6,18 @@
     <img src="imgs/tittle_fig.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
+<h4 align="center">
+  <a href="https://github.com/RizhaoCai">Rizhao Cai*</a>, 
+  <a href="https://github.com/ZiruiSongBest">Zirui Song*</a>, 
+  <a href="https://dayan-guan.github.io/">Dayan Guan†</a>, 
+  <a href="https://zhenhaochenofficial.github.io/">Zhenhao Chen</a>, 
+  <a>Xing Luo</a>, 
+  <a>Chenyu Yi</a>, 
+  <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a>
+</h4>
+
+<h5 align="center"> *Equal contribution, †Correspoding Author <h5 align="center">
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
-
-
 
 <h5 align="center">
 
