@@ -213,7 +213,14 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 ## Cite our work
 ```
-The Arxiv version will be released soon!
+@misc{cai2023benchlmm,
+      title={BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models}, 
+      author={Rizhao Cai and Zirui Song and Dayan Guan and Zhenhao Chen and Xing Luo and Chenyu Yi and Alex Kot},
+      year={2023},
+      eprint={2312.02896},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 
