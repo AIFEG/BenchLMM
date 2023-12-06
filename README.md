@@ -28,7 +28,7 @@
 
 <h5 align="center">
 
-[![hf_space](https://img.shields.io/badge/🤗-Dataset%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchGPT) 
+[![hf_space](https://img.shields.io/badge/🤗-Dataset%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchLMM) 
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.02896-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.02896)
 
 </h5>
@@ -37,7 +37,7 @@
 ## Benchmark Examples
 ![Demo](imgs/demo.png)
 
-Note: For a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our [Benchmark](https://huggingface.co/datasets/AIFEG/BenchGPT) for more examples and detailed questions.
+Note: For a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see our [Benchmark](https://huggingface.co/datasets/AIFEG/BenchLMM) for more examples and detailed questions.
 ## Directory Structure
 
 - **baseline/**: 
@@ -86,12 +86,12 @@ Note: For a simple presentation, the questions in Domestic Robot and Open Game h
 ## Evaluate on our Benchmark
 
 - **Install**  
-Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchGPT/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchGPT)
+Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchLMM/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchLMM)
 
 
 ```Shell
-git clone git@github.com:AIFEG/BenchGPT.git
-cd BenchGPT
+git clone git@github.com:AIFEG/BenchLMM.git
+cd BenchLMM
 mkdir evaluate_results
 ```
 
@@ -166,7 +166,7 @@ Please check out our [Model Zoo](https://github.com/haotian-liu/LLaVA/blob/main/
 
 
 - **Run and evaluate LLaVA on our Benchmark**
-1.  Add the file [BenchGPT_LLaVA_model_vqa.py](baseline/LLaVA/BenchGPT_LLaVA_model_vqa.py) to the path ```LLaVA/llava/eval/``` 
+1.  Add the file [BenchLMM_LLaVA_model_vqa.py](baseline/LLaVA/BenchLMM_LLaVA_model_vqa.py) to the path ```LLaVA/llava/eval/``` 
 
 2. Modify the file path and run the script [scripts/LLaVA.sh](scripts/LLaVA.sh)
 ```Shell
@@ -195,14 +195,14 @@ Then modify the ```llm_model``` in the [Model Config](https://github.com/salesfo
 
 - **Run InstructBLIP on our Benchmark**
 
-Modify the file path and run the script [BenchGPT/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
+Modify the file path and run the script [BenchLMM/scripts/InstructBLIP.sh](scripts/InstructBLIP.sh)
 ```
-bash BenchGPT/scripts/InstructBLIP.sh
+bash BenchLMM/scripts/InstructBLIP.sh
 ```
 - **Evaluate results**
-Modify the file path and run the script [BenchGPT/scripts/evaluate.sh](scripts/evaluate.sh)
+Modify the file path and run the script [BenchLMM/scripts/evaluate.sh](scripts/evaluate.sh)
 ```
-bash BenchGPT/scripts/evaluate.sh
+bash BenchLMM/scripts/evaluate.sh
 ```
 
 Note: Score will be saved in the file [results](evaluate_results/).
