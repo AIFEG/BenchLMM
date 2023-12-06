@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKSPACE_PATH="/hdd_16T/Zirui/Test2/BenchGPT" # Please put your absolute workspace path here. It will be used as root folder for all the following folders.
+WORKSPACE_PATH="/hdd_16T/Zirui/Test2/BenchLMM" # Please put your absolute workspace path here. It will be used as root folder for all the following folders.
 GROUND_TRUTH_FOLDER="$WORKSPACE_PATH/jsonl" # The input folder of the ground truth answers.
 MODEL_PREDICT_FOLDER="$WORKSPACE_PATH/results" # The input folder of your model predict answers.
 RESULT_OUTPUT_FOLDER="$WORKSPACE_PATH/evaluate_results" # The output folder of the gpt evaluate results. Python script will generate results here.

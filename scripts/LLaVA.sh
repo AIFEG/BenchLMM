@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define the paths for the answers folder, jsonl files, and base image folder
-ANSWERS_FOLDER="/workspace/Test/BenchGPT/results" # The LLaVA output  
-JSONL_FILE_PATH="/workspace/Test/BenchGPT/jsonl"
+ANSWERS_FOLDER="/workspace/Test/BenchLMM/results" # The LLaVA output  
+JSONL_FILE_PATH="/workspace/Test/BenchLMM/jsonl"
 IMAGE_FOLDER_base="/workspace/Benckmark/images"
-BenchGPT_LLaVA_model_vqa_PATH="/workspace/Test/LLaVA/llava/eval/BenchGPT_LLaVA_model_vqa.py" # path to the BenchGPT_LLaVA_model_vqa.py
+BenchLMM_LLaVA_model_vqa_PATH="/workspace/Test/LLaVA/llava/eval/BenchLMM_LLaVA_model_vqa.py" # path to the BenchLMM_LLaVA_model_vqa.py
 # Iterate over all .jsonl files in the jsonl folder
 for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
     # Extract the filename without path and extension
@@ -41,7 +41,7 @@ for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
     ANSWER_FILE="$ANSWERS_FOLDER/answers_${FILENAME}.jsonl"
 
     # Execute the model_vqa.py script
-    python $BenchGPT_LLaVA_model_vqa_PATH \
+    python $BenchLMM_LLaVA_model_vqa_PATH \
         --model-path liuhaotian/llava-v1.5-13b \
         --question-file "$JSONL_FILE" \
         --image-folder "$IMAGE_FOLDER" \

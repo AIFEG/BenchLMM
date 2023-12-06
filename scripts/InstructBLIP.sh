@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define paths
-JSONL_FILE_PATH="/workspace/Test3/BenchGPT/jsonl"  # Path to the JSONL files
+JSONL_FILE_PATH="/workspace/Test3/BenchLMM/jsonl"  # Path to the JSONL files
 IMAGE_FOLDER_BASE="/workspace/Benckmark/images"   # Base image folder
-INSTRUCTBLIP_PY_PATH="/workspace/Test3/BenchGPT/baseline/InstructBLIP/blip_image_result1.py"  # Path to the blip_image_result1.py
-OUTPUT_JSONL_FOLDER="/workspace/Test3/BenchGPT/results"  # Output folder for processed JSONL files
+INSTRUCTBLIP_PY_PATH="/workspace/Test3/BenchLMM/baseline/InstructBLIP/blip_image_result1.py"  # Path to the blip_image_result1.py
+OUTPUT_JSONL_FOLDER="/workspace/Test3/BenchLMM/results"  # Output folder for processed JSONL files
 
 # Iterate over all .jsonl files in the jsonl folder
 for JSONL_FILE in "$JSONL_FILE_PATH"/*.jsonl; do
