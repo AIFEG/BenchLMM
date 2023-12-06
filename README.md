@@ -16,11 +16,11 @@
   <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a><sup>1</sup>
 </h4>
 <ul align="center">
-  <sup>1</sup> Nanyang Technological University</li>
-  <sup>2</sup> University of Technology Sydney</li>
-  <sup>3</sup> Northeastern University</li>
-  <sup>4</sup> Mohamed bin Zayed University of Artificial Intelligence</li>
-  <sup>5</sup> Zhejiang University</li>
+  <sup>1</sup>Nanyang Technological University</li>
+  <sup>2</sup>University of Technology Sydney</li>
+  <sup>3</sup>Northeastern University</li>
+  <sup>4</sup>Mohamed bin Zayed University of Artificial Intelligence</li>
+  <sup>5</sup>Zhejiang University</li>
 </ul>
 
 <h5 align="center"> *Equal contribution, †Corresponding Author </h5>
