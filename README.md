@@ -5,7 +5,7 @@
 <p align="center">
     <img src="imgs/tittle_fig.png" width="150" style="margin-bottom: 0.2;"/>
 <p>
-<h2 align="center"> <a href="https://arxiv.org/abs/2311.10122"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
+<h2 align="center"> <a href="https://arxiv.org/abs/2312.02896"> BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</a></h2>
 <h4 align="center">
   <a href="https://github.com/RizhaoCai">Rizhao Cai*</a><sup>1</sup>, 
   <a href="https://github.com/ZiruiSongBest">Zirui Song*</a><sup>2,3</sup>, 
