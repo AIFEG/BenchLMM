@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
-    "label": "version",
-    "message": "1.2.3",
+    "label": "BenchLMM",
+    "message": "Leaderboard",
     "color": "blue",
     "logoSVG":"https://www.w3.org/2000/svg"
   }

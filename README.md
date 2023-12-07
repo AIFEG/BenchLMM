@@ -30,7 +30,7 @@
 
 [![hf_space](https://img.shields.io/badge/🤗-Dataset%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchGPT.zip) 
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.02896-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.02896)
-![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAIFEG%2FBenchLMM%2Fmain%2Fimgs%2Fversion.json)
+[![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FAIFEG%2FBenchLMM%2Fmain%2Fimgs%2Fversion.json)](https://paperswithcode.com/sota/visual-question-answering-on-benchlmm)
  <br>
 
 </h5>
