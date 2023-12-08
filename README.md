@@ -88,7 +88,7 @@ Note: For a simple presentation, the questions in Domestic Robot and Open Game h
 ## Evaluate on our Benchmark
 
 - **Install**  
-Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchLMM/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchLMM)
+Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchLMM/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchGPT.zip)
 
 
 ```Shell
