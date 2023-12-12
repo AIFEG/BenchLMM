@@ -1,25 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BenchLMM Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img src="imgs/tittle_fig.png" width="150" alt="Project Title"/>
-            <h1>BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models</h1>
-            <!-- Authors and affiliations -->
-        </header>
-        
-        <!-- Additional Content Here -->
+<html>
 
-        <footer>
-            <!-- Acknowledgement, Citation, Related Projects -->
-        </footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="GLaMM: Pixel Grounding Large Multimodal Model">
+  <meta name="keywords" content="multimodal chatbot">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GLaMM</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="images/glamm/GlamImage-min.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+  <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.27.0/gradio.js"></script>
+</head>
+
+
+<style>
+    .section {
+    margin-bottom: -30px; /* Adjust this value as needed to reduce the space */
+  }
+  .expandable-card .card-text-container {
+    max-height: 200px;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .expandable-card.expanded .card-text-container {
+    max-height: none;
+  }
+
+  .expand-btn {
+    position: relative;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* margin-top: -20px; */
+    /* justify-content: center; */
+    color: #510c75;
+    border-color: transparent;
+  }
+
+  .expand-btn:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+    text-decoration: none;
+    border-color: transparent;
+    color: #510c75;
+  }
+
+  .expand-btn:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .expandable-card:not(.expanded) .card-text-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+  }
+
+  .expandable-card:not(.expanded) .expand-btn {
+    margin-top: -40px;
+  }
+
+  .card-body {
+    padding-bottom: 5px;
+  }
+
+  .vertical-flex-layout {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .figure-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .adjustable-font-size {
+    font-size: calc(0.5rem + 2vw);
+  }
+
+  .chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  #gradio pre {
+    background-color: transparent;
+  }
+</style>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="imgs/tittle_fig.png" alt="GLaMM_face" width="100">
+            <h1 class="title is-1 publication-title">BenchLMM: <span class="is-size-2"><span class="is-size-1">B</span>enchmarking <span class="is-size-1">C</span>ross-style <span class="is-size-1">V</span>isual <span class="is-size-1">C</span>apability of <span class="is-size-1">L</span>arge <span class="is-size-1">M</span>ultimodal <span class="is-size-1">M</span>odels</span></h1>
+            <div class="is-size-5 publication-authors">
+              <!-- First Group of 3 Authors -->
+              <div class="author-group">
+                  <span class="author-block">
+                      <a href="https://github.com/RizhaoCai" style="color:#f68946;font-weight:normal;">Rizhao Cai<sup>*1</sup></a>,
+                  </span>
+                  <span class="author-block">
+                      <a href="https://github.com/ZiruiSongBest" style="color:#f68946;font-weight:normal;">Zirui Song<sup>*2,3</sup></a>,
+                  </span>
+              </div>
+
+              <!-- Second Group of 3 Authors -->
+              <div class="author-group">
+                  <span class="author-block">
+                      <a href="https://dayan-guan.github.io/" style="color:#008AD7;font-weight:normal;">Dayan Guan<sup>1</sup></a>,
+                  </span>
+                  <span class="author-block">
+                      <a href="https://zhenhaochenofficial.github.io" style="color:#f68946;font-weight:normal;">Zhenhao Chen<sup>4</sup></a>,
+                  </span>
+                  <span class="author-block">
+                      <a href="" style="color:#f68946;font-weight:normal;">Xing Luo<sup>5</sup></a>,
+                  </span>
+                  <span class="author-block">
+                    <a href="https://www.researchgate.net/scientific-contributions/Chenyu-Yi-2169232914" style="color:#f68946;font-weight:normal;">Chenyu Yi<sup>1</sup></a>,
+                </span>
+              </div>
+
+              <!-- Third Group of 4 Authors -->
+              <div class="author-group">
+                  <span class="author-block">
+                      <a href="https://personal.ntu.edu.sg/eackot/" style="color:#f68946;font-weight:normal;">Alex Kot<sup>1</sup></a>,
+                  </span>
+
+              </div>
+          </div>
+            <div class="is-size-5 publication-authors">
+            Nanyang Technological University<sup>1</sup><br>
+            </div>
+            <div class="is-size-5 publication-authors">
+            University of Technology Sydney<sup>2</sup><br>
+            </div>
+            <div class="is-size-5 publication-authors">
+            Northeastern University<sup>3</sup><br>
+            </div>                
+            <div class="is-size-5 publication-authors">
+            Mohamed bin Zayed University of Artificial Intelligence<sup>4</sup><br>
+            </div>
+            <div class="is-size-5 publication-authors">
+            Zhejiang University<sup>5</sup><br>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block"><sup>*</sup>Equally contributing first authors</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.02896" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/AIFEG/BenchLMM" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/AIFEG/BenchLMM/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchGPT.zip" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-database"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h4 class="subtitle has-text-justified">
+            Large Multimodal Models (LMMs) such as GPT-4V and LLaVA have shown remarkable capabilities in visual reasoning with common image styles. However, their robustness against diverse style shifts, crucial for practical applications, remains largely unexplored. In this paper, we propose a new benchmark, BenchLMM, to assess the robustness of LMMs against three different styles: artistic image style, imaging sensor style, and application style, where each style has five sub-styles. Utilizing BenchLMM, we comprehensively evaluate state-of-the-art LMMs and reveal: 1) LMMs generally suffer performance degradation when working with other styles; 2) An LMM performs better than another model in common style does not guarantee its superior performance in other styles; 3) LMMs' reasoning capability can be enhanced by prompting LMMs to predict the style first, based on which we propose a versatile and training-free method for improving LMMs; 4) An intelligent LMM is expected to interpret the causes of its errors when facing stylistic variations. We hope that our benchmark and analysis can shed new light on developing more intelligent and versatile LMMs.        </h4>
+      </div>
+    </div>
+  </section>
+
+
+<!-- <div style="text-align:center;">
+  <iframe width="1024" height="720" src="https://www.youtube.com/embed/0dZ4dlNIGTY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+
+
+  <!-- <section class="section"  style="background-color:#efeff081">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths">
+        <h2 class="title is-3">🔥Highlights</h2>
+        <div class="content has-text-justified">
+          <ol type="1">
+            <li><b>GLaMM Introduction</b>. We present the <span style="color: #997300;">Grounding Large Multimodal Model (GLaMM)</span>, the first-of-its-kind model capable of generating natural language responses that are seamlessly integrated with object segmentation masks. Unlike existing models, GLaMM accommodates both textual and optional visual prompts, facilitating enhanced multimodal user interaction. </li>
+              <br>
+            <li><b>Novel Task & Evaluation</b>. Recognizing the lack of standardized benchmarks for visually grounded conversations, we propose a new task of <span style="color: #997300;">Grounded Conversation Generation</span> (GCG). Alongside, we introduce a comprehensive evaluation protocol to measure the efficacy of models in this novel setting, filling a significant gap in the literature.</li>
+              <br>
+            <li><b>GranD Dataset Creation</b>. To facilitate model training and evaluation, we create <span style="color: #997300;">GranD - Grounding-anything Dataset</span>, a large-scale densely annotated dataset. Developed using an automatic annotation pipeline and verification criteria, it encompasses 7.5M unique concepts grounded in 810M regions. Additionally, we produce <span style="color: #997300;">GranD-f</span>, a high-quality dataset explicitly designed for the GCG task, by re-purposing existing open-source datasets.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!--Model Arch-->
+<section class="section"style="background-color:#efeff081">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths">
+      <h2 class="title is-3">Motivation</h2>
+    </div>
+  </div>
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <p>
+            We propose BenchLMM to investigate the cross-style capability of Large Multimodal Models (LMMs). This includes their proficiency in tasks like analyzing images with diverse styles, processing images acquired from non-RGB cameras, and interpreting images sourced from specific application knowledge. In this section, we will elaborate on how we build the benchmark that encompasses these diverse styles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+        <figure style="text-align: center;">
+          <img id="teaser" width="100%" src="imgs/demo.png">
+          <figcaption>
+            This picture shows benchmark examples. For each specific field, one example image and its corresponding Q&A have been shown. Note that, for a simple presentation, the questions in Domestic Robot and Open Game have been simplified from multiple-choice format. Please see the Appendix for more examples and detailed questions.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Model Arch -->
+<!--Dataset-->
+<section id="Benchmark" class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths">
+      <h2 class="title is-3">Evaluate Public LMMs</h2>
+    </div>
+  </div>
+  <!--Dataset Pipeline-->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <p>
+            In most existing works, LMMs are predominantly evaluated using images in the 'Photo' style, leading to a gap in understanding their performance across diverse artistic styles. We extend the evaluation scope by examining LMMs' performance with various artistic styles beyond the common 'Photo' style. Results, as detailed in Table, reveal a notable decline in LMMs' effectiveness when processing these artistic styles. This trend suggests a potential overfitting of LMMs to the 'Photo' style, highlighting their limited adaptability to varied artistic styles, a capability that humans typically possess. Interestingly, GPT-4V, despite being a robust commercial model, exhibits similar limitations in handling diverse styles.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+        <figure style="text-align: center;">
+          <img id="teaser" width="100%" src="imgs/Table1.png">
+          <figcaption>
+            The figure shows the evaluations of public LMMs on cross-style BenchLMM.
+            Note that Average<sup>*</sup> represents the 
+            % out-of-distribution (OOD) 
+            average accuracy computed over five artistic-style benchmarks.
+            The best and the second best results are highlighted in and respectively.
+            All the numbers are presented in % and the full score is 100%.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+    <br>
+  <!-- Dataset Samples
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+          <p>
+            Below we present more evaluation results.
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+        <figure style="text-align: center;">
+          <img id="teaser" width="100%" src="imgs/Tabel2.png">
+         <figcaption>
+            Evaluations of public LMMs on cross-sensor BenchLMM.
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+        <figure style="text-align: center;">
+          <img id="teaser" width="100%" src="imgs/Table3.png">
+          <figcaption>
+            Evaluations of public LMMs on cross-task BenchLMM.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+    <br>
+    <br>
+    <!--Subsection-->
+
+    <section id="Examples" class="section">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-six-fifths">
+            <h2 class="title is-3">More examples of our benchmark</h2>
+          </div>
+        </div>
+        <!--Dataset Pipeline-->
+        <!-- <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <div class="content has-text-justified">
+                <p>
+                  In most existing works, LMMs are predominantly evaluated using images in the 'Photo' style, leading to a gap in understanding their performance across diverse artistic styles. We extend the evaluation scope by examining LMMs' performance with various artistic styles beyond the common 'Photo' style. Results, as detailed in Table, reveal a notable decline in LMMs' effectiveness when processing these artistic styles. This trend suggests a potential overfitting of LMMs to the 'Photo' style, highlighting their limited adaptability to varied artistic styles, a capability that humans typically possess. Interestingly, GPT-4V, despite being a robust commercial model, exhibits similar limitations in handling diverse styles.
+                </p>
+              </div>
+            </div>
+          </div> -->
+      
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+              <figure style="text-align: center;">
+                <img id="teaser" width="100%" src="imgs/P1-new_1.png">
+                <!-- <figcaption>
+                </figcaption> -->
+              </figure>
+            </div>
+          </div>
+        </div>
+          <br>
+        <!-- Dataset Samples
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <div class="content has-text-justified">
+                <p>
+                  Below we present more evaluation results.
+                </p>
+              </div>
+            </div>
+          </div> -->
+      
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+              <figure style="text-align: center;">
+                <img id="teaser" width="100%" src="imgs/P2-new_1.png">
+               <!-- <figcaption>
+                  Evaluations of public LMMs on cross-sensor BenchLMM.
+              </figcaption> -->
+              </figure>
+            </div>
+          </div>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-six-fifths" style="display: flex; align-items: flex-start; justify-content: center;">
+              <figure style="text-align: center;">
+                <img id="teaser" width="100%" src="imgs/P3-new_1.png">
+                <!-- <figcaption>
+                  Evaluations of public LMMs on cross-task BenchLMM.
+                </figcaption> -->
+              </figure>
+            </div>
+          </div>
+        </div>
+          <br>
+          <br>
+          <!--Subsection-->
+<!--Downstream-->
+<!--Conv -->
+<style>
+  #BibTeX {
+    margin-bottom: -80px; /* Adjust the negative margin as needed */
+  }
+  #Acknowledgement {
+    margin-top: -80px; /* Adjust the negative margin as needed */
+  }
+</style>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+  @misc{cai2023benchlmm,
+    title={BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models}, 
+    author={Rizhao Cai and Zirui Song and Dayan Guan and Zhenhao Chen and Xing Luo and Chenyu Yi and Alex Kot},
+    year={2023},
+    eprint={2312.02896},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+  </code></pre>
+    </div>
+  </section>
+  <section class="section" id="Acknowledgement">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgement</h2>
+      <p>
+        This research is supported in part by the Rapid-Rich Object Search (ROSE) Lab of Nanyang Technological University and the NTU-PKU Joint Research Institute (a collaboration between NTU and Peking University that is sponsored by a donation from the Ng Teng Fong Charitable Foundation). We are deeply grateful to Yaohang Li from the University of Technology Sydney for his invaluable assistance in conducting the experiments, and to Jingpu Yang, Helin Wang, Zihui Cui, Yushan Jiang, Fengxian Ji, and Yuxiao Hang from NLULab@NEUQ (Northeastern University at Qinhuangdao, China) for their meticulous efforts in annotating the dataset. We also would like to thank Prof. Miao Fang (PI of NLULab@NEUQ) for his supervision and insightful suggestion during discussion on this project.
+        This website is adapted from <a
+        href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>, licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>. 
+      </p>
+    </div>
+  </section>
+
 </body>
+
 </html>
+
+<div style="text-align: center;">
+  <a href="https://www.ntu.edu.sg/rose" target="_blank">
+    <img src="imgs/logos/ROSE.png" width="200" height="100" alt="ROSE Logo">
+  </a>
+  <a href="https://www.uts.edu.au/" target="_blank">
+    <img src="imgs/logos/UTS.png" width="100" height="100" alt="UTS Logo">
+  </a>
+  <a href="https://www.NEU.edu.cn/" target="_blank">
+    <img src="imgs/logos/NEU.png" width="100" height="100" alt="NEU Logo">
+  </a>
+  <a href="https://mbzuai.ac.ae" target="_blank">
+    <img src="imgs/logos/MBZUAI_logo.png" width="360" height="85" alt="MBZUAI Logo">
+  </a>
+  <a href="https://www.ZJU.edu.cn/" target="_blank">
+    <img src="imgs/logos/ZJU_jmages.png" width="100" height="100" alt="NEU Logo">
+  </a>
+</div>
