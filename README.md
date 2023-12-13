@@ -224,7 +224,8 @@ Note: Score will be saved in the file [results](evaluate_results/).
 }
 ```
 
-
+## Contact
+If you have any question or issue with our project, please contact Dayan Guan: dayan.guan@outlook.com
 
 
 ## Acknowledgement
