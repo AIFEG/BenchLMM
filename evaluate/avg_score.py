@@ -35,7 +35,12 @@ def main():
     
     if avg_score is not None:
         output_path = './evaluate_results/average_score.json'
-        
+        output_dir = os.path.dirname(output_path)
+
+        # Create directory if it doesn't exist
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+            
         new_data = {
             'source_file': args.score_jsonl_path,
             'average_score': avg_score,

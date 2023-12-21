@@ -32,6 +32,11 @@
 [![hf_space](https://img.shields.io/badge/🤗-Dataset%20Spaces-blue.svg)](https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchGPT.zip) 
 [![arXiv](https://img.shields.io/badge/Arxiv-2312.02896-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2312.02896)
 [![Endpoint Badge](https://img.shields.io/badge/BenchLMM-Leaderboard-blue)](https://paperswithcode.com/sota/visual-question-answering-on-benchlmm)
+
+[![zhihu](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/671911974?utm_psn=1721273086845059072)
+[![Wechat](https://img.shields.io/badge/-WeChat@CVer-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/f6P7WXz-Z1ZR1Qqa2czRdg)
+[![Twitter](https://img.shields.io/badge/-Twitter@Zhenhao%20Chen%20-black?logo=twitter&logoColor=1D9BF0)](https://x.com/DavisChan1998/status/1737798877254685058?s=20)
+
  <br>
 
 </h5>
@@ -89,7 +94,7 @@ Note: For a simple presentation, the questions in Domestic Robot and Open Game h
 ## Evaluate on our Benchmark
 
 - **Install**  
-Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchLMM/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchGPT.zip)
+Download our benchmark image from our [Releases](https://github.com/AIFEG/BenchLMM/releases/tag/images) or [Hugging face](https://huggingface.co/datasets/AIFEG/BenchLMM/blob/main/BenchLMM.zip)
 
 
 ```Shell
@@ -134,7 +139,7 @@ Modify the file path and run the script [scripts/evaluate.sh](scripts/evaluate.s
 ```
 bash scripts/evaluate.sh
 ```
-Note: Score will be saved in the file [results](evaluate_results/).
+Note: Score will be saved in the file [results](evaluate_results/). Robots and game scores are included in the [evaluate_results/Robots.jsonl](evaluate_results/robots.jsonl) and [evaluate_results/game.jsonl](evaluate_results/game.jsonl) respectively.
 ## Baseline
 |Model|VRAM required|
 |:---|:---:|
