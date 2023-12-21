@@ -12,7 +12,7 @@
   <a href="https://dayan-guan.github.io/">Dayan Guan†</a><sup>1</sup>, 
   <a href="https://zhenhaochenofficial.github.io/">Zhenhao Chen</a><sup>4</sup>, 
   <a>Xing Luo</a><sup>5</sup>, 
-  <a>Chenyu Yi</a><sup>1</sup>, 
+  <a href="https://github.com/Newbeeyoung">Chenyu Yi</a><sup>1</sup>, 
   <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a><sup>1</sup>
 </h4>
 <ul align="center">
@@ -221,17 +221,16 @@ Note: Score will be saved in the file [results](evaluate_results/).
 
 ## Cite our work
 ```bibtex
-@misc{cai2023benchlmm,
-      title={BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models}, 
-      author={Rizhao Cai and Zirui Song and Dayan Guan and Zhenhao Chen and Xing Luo and Chenyu Yi and Alex Kot},
-      year={2023},
-      eprint={2312.02896},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{cai2023benchlmm,
+  title={BenchLMM: Benchmarking Cross-style Visual Capability of Large Multimodal Models},
+  author={Cai, Rizhao and Song, Zirui and Guan, Dayan and Chen, Zhenhao and Luo, Xing and Yi, Chenyu and Kot, Alex},
+  journal={arXiv preprint arXiv:2312.02896},
+  year={2023}
 }
 ```
 
-
+## Contact
+If you have any question or issue with our project, please contact Dayan Guan: dayan.guan@outlook.com
 
 
 ## Acknowledgement
