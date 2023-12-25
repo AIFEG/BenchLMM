@@ -36,7 +36,8 @@
 [![zhihu](https://img.shields.io/badge/-知乎-000000?logo=zhihu&logoColor=0084FF)](https://zhuanlan.zhihu.com/p/671911974?utm_psn=1721273086845059072)
 [![Wechat](https://img.shields.io/badge/-WeChat@CVer-000000?logo=wechat&logoColor=07C160)](https://mp.weixin.qq.com/s/f6P7WXz-Z1ZR1Qqa2czRdg)
 [![Twitter](https://img.shields.io/badge/-Twitter@Zhenhao%20Chen%20-black?logo=twitter&logoColor=1D9BF0)](https://x.com/DavisChan1998/status/1737798877254685058?s=20)
-
+[![Twitter](https://img.shields.io/badge/-Twitter@AK%20-black?logo=twitter&logoColor=1D9BF0)](https://x.com/DavisChan1998/status/1737798877254685058?s=20)
+[![Twitter](https://img.shields.io/badge/-Twitter@Niels%20Rogge%20-black?logo=twitter&logoColor=1D9BF0)](https://twitter.com/NielsRogge/status/1737854354378707322)
  <br>
 
 </h5>
