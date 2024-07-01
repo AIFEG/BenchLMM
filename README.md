@@ -11,6 +11,7 @@
   <a href="https://github.com/ZiruiSongBest">Zirui Song*</a><sup>2,3</sup>, 
   <a href="https://dayan-guan.github.io/">Dayan Guan†</a><sup>1</sup>, 
   <a href="https://zhenhaochenofficial.github.io/">Zhenhao Chen</a><sup>4</sup>, 
+  <a href="https://github.com/dylanli-hang">Yaohang Li</a><sup>2,3</sup>, 
   <a>Xing Luo</a><sup>5</sup>, 
   <a href="https://github.com/Newbeeyoung">Chenyu Yi</a><sup>1</sup>, 
   <a href="https://personal.ntu.edu.sg/eackot/">Alex Kot</a><sup>1</sup>
