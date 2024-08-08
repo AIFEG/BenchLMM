@@ -81,7 +81,7 @@ Note: For a simple presentation, the questions in Domestic Robot and Open Game h
 
 - **imgs/**: 
 
-  - This directory contains the image which used in this page. However, It's not out benchmark images.
+  - This directory contains the images used on this page. However, they are not our benchmark images.
 
 
 - **results/**: 
